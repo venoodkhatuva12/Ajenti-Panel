@@ -1,5 +1,15 @@
+#!/bin/bash
+#Script made for Portal LEMP installtion
+#Author: Vinod.N K
+#Usage: Nginx, Mysql, PhP for portal installation
+#Distro : Linux -Centos, Rhel, and any fedora
 
-yum update -y
+# Update yum repos.and install development tools
+echo "Starting installation of LEAP..."
+sudo yum update -y
+sudo yum groupinstall "Development Tools" -y
+sudo yum install screen -y
+
 pip install --upgrade pip
 hash -r
 yum install gcc openssl-devel python-devel  openldap-devel -y
