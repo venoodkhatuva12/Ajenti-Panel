@@ -6,7 +6,7 @@
 
 # Update yum repos.and install development tools
 echo "Starting installation of AJENTI CONTROL PANEL..."
-sudorpm -ivh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+sudo rpm -ivh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
 sudo yum update -y
 sudo yum groupinstall "Development Tools" -y
 sudo yum install screen -y
